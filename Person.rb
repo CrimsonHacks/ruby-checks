@@ -8,7 +8,9 @@ class Person
     @name = name
     @age = age
   end
-
+  def reverse_name()
+    @name.reverse
+  end
   # Returns a string with the name and age of the student.
   def to_s
     "Name: #{name}, Age: #{age}"

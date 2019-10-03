@@ -15,6 +15,17 @@ class Teacher < Person
     @students.push(student)
   end
 
+  #delete students
+  def delete_students()
+    @students = []
+  end
+
+  def student_names()
+      student_names = []
+      @students.each {|student| student_names.push(student.reverse_name)}
+      student_names
+  end
+
   # Prints all of the students in the array.
   def print_students
     @students.each {|student| puts student}
