@@ -19,4 +19,14 @@ class Teacher < Person
   def print_students
     @students.each {|student| puts student}
   end
+
+  def delete_students
+    @students = []
+  end
+
+  def students_names
+    @students.map{|student| student.reverse_name}
+    # student_names = []
+    # @students.each{|student| student_names.push(student.name)}
+  end
 end
