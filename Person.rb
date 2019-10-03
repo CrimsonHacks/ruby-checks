@@ -13,8 +13,4 @@ class Person
   def to_s
     "Name: #{name}, Age: #{age}"
   end
-
-  def reverse_name
-    @name.reverse
-  end
 end
